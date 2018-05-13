@@ -25,7 +25,7 @@ class Application
       end
 
     when /add/
-      cart << req.params['item']
+      @@cart << req.params['item']
       # binding.pry
 
     else
