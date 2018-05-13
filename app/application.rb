@@ -26,7 +26,7 @@ class Application
 
     when /add/
       cart << req.params['item']
-      binding.pry
+      # binding.pry
 
     else
       resp.write "Path Not Found"
