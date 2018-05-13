@@ -25,8 +25,11 @@ class Application
       end
 
     when /add/
-      @@cart << req.params['item']
-      resp.write "added #{req.params['item']}\n"
+      if @@items.include?(req.params['item'])
+        @@cart << req.params['item']
+        resp.write "added #{req.params['item']}\n"
+      else
+        resp.write("We don't have that item")
       # binding.pry
 
     else
