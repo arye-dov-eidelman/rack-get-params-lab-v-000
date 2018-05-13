@@ -30,6 +30,7 @@ class Application
         resp.write "added #{req.params['item']}\n"
       else
         resp.write("We don't have that item")
+      end
       # binding.pry
 
     else
