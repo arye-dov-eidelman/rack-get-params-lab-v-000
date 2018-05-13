@@ -26,6 +26,7 @@ class Application
 
     when /add/
       @@cart << req.params['item']
+      resp.write "added #{req.params['item']}\n"
       # binding.pry
 
     else
