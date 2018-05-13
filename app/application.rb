@@ -31,7 +31,6 @@ class Application
       else
         resp.write("We don't have that item")
       end
-      # binding.pry
 
     else
       resp.write "Path Not Found"
